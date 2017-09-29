@@ -19,7 +19,7 @@ class SocialLoginController extends Controller
     //\Socialite::driver('facebook')->user();
     //$user = Socialite::driver('github')->user();
 
-      dd($provider); // print value debug.
+      //'dd($provider); // print value debug.
       echo $provider->name;
 
   }
