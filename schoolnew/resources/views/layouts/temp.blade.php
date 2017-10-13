@@ -19,7 +19,7 @@
       <link rel="stylesheet" href="{{asset('font-awesome-4.7.0/css/font-awesome.min.css') }}">
 
   </head>
-  <body>
+  <body ng-app="user_mg">
     <script type="text/javascript">
       $( document ).ready(function(){
         $(".button-collapse").sideNav();
@@ -98,4 +98,9 @@
 
 
   </body>
+  <script src="angularjs/app.js"></script>
+  <script src="angularjs/controllers/news/newsControllor.js"></script>
+
+  <!--services_all-->
+  <script src="angularjs/services/crudDataServices.js"></script>
 </html>

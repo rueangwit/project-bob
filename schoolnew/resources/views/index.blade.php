@@ -3,7 +3,7 @@
 @section('content')
 <!-- Page Layout here -->
 <!-- Page Layout here -->
-<div class="row">
+<div class="row" ng-controller="newsController">
 
   <div class="col s2 hide-on-med-and-down">
     <!-- Grey navigation panel -->
@@ -95,7 +95,7 @@
     <h5>ข่าวประชาสัมพัน <span class="new badge red">4</span></h5>
     <hr>
 
-       <div class="row">
+       <div class="row" ng-repeat="newsupdate in response">
          <div class="col s12 m6 l4">
            <div class="card">
              <div class="card-image">

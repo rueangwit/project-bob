@@ -1,13 +1,6 @@
-user_mg.controller('HelloController', [ '$scope',
-    function($scope){
-    //  $scope.name = 'rueangitbob';
-      console.log('rueangwit');
-}
-]);
-
-user_mg.controller('userLoginPage', [ '$scope', 'newsService','$http',
-    function($scope, newsService, alertify, $http){
-      $scope.input={};
+user_mg.controller('newsController', [ '$scope', 'dataService','$http',
+    function($scope, dataService, $http){
+      //$scope.input={};
       /*
     $scope.insertdata = function(){
       newsService.insertNewsService($scope.input)//ส่งค่า input ไปให้ service
@@ -57,7 +50,8 @@ user_mg.controller('userLoginPage', [ '$scope', 'newsService','$http',
     } */
     //แสดงขอ้มูล
     $scope.show = function(){
-      newsService.showNewsService()
+      console.log('dddddd');return;
+      dataService.showService('newsindex')
       .then(function(response){
         $scope.response = response.data;
         console.log(response.data);
