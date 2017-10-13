@@ -12,13 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 // for redirect to facebook auth.
 Route::any('auth/login/facebook', 'SocialLoginController@facebookAuthRedirect');
 // facebook call back after login success.
 Route::any('auth/login/facebook/index', 'SocialLoginController@facebookSuccess');
-
+Route::any('newsindex', 'news\NewsController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
